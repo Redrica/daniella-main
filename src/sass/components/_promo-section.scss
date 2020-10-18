@@ -1,0 +1,30 @@
+.promo-section {
+  padding: 20px 0 5px;
+
+  @include tablet {
+    padding: 25px 0 15px;
+  }
+}
+
+.promo-section__categories {
+  margin-bottom: 20px;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    margin-bottom: 60px;
+  }
+}
+
+.promo-section__card {
+  width: 100%;
+  margin-bottom: 13px;
+
+  @include tablet {
+    width: calc(50% - 10px);
+    margin-bottom: 0;
+  }
+}

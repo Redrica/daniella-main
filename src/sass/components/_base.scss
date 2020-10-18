@@ -1,0 +1,97 @@
+/**
+ * @section Base Styles
+ */
+$white: #ffffff;
+$primary: #c50e50;
+$primaryEffect: #b30b48;
+$lightGray: #e2e2e2;
+$black: #000000;
+$wideMobile: 576px;
+$tablet: 768px;
+$wideTablet: 992px;
+$desktop: 1280px;
+
+@mixin wide-mobile {
+	@media (min-width: #{$wideMobile}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: #{$tablet}) {
+		@content;
+	}
+}
+
+@mixin wide-tablet {
+	@media (min-width: #{$wideTablet}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$desktop}) {
+		@content;
+	}
+}
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	min-width: 320px;
+	height: 100%;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	background-color: $white;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+// чтобы не подключать бутстрап
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include wide-mobile {
+		max-width: 540px;
+	}
+
+	@include tablet {
+		max-width: 750px;
+	}
+
+	@include wide-tablet {
+		max-width: 970px;
+	}
+
+	@include desktop {
+		max-width: 1250px;
+	}
+}
+
+.section-title {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 600;
+
+	@include wide-tablet {
+		font-size: 18px;
+	}
+
+	@include desktop {
+		font-size: 22px;
+	}
+}

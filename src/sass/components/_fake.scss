@@ -1,0 +1,19 @@
+.fake-header,
+.fake-footer {
+
+  & picture {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  & img {
+    flex-shrink: 0;
+    width: auto;
+  }
+}
+
+.fake-slider {
+  display: flex;
+  justify-content: space-between;
+}

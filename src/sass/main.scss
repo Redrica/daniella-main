@@ -1,0 +1,12 @@
+// для имитации шапки и подвала, удалить подключение и стилевой файл
+@import "components/fake";
+
+// рабочие стилевые блоки
+@import "components/base";
+@import "components/normalize";
+@import "components/main-banner";
+@import "components/announce";
+@import "components/category-card";
+@import "components/promo-section";
+@import "components/promo-slider";
+@import "components/button";

@@ -1,0 +1,78 @@
+.promo-slider__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  @include wide-tablet {
+    margin-bottom: 15px;
+  }
+}
+
+.promo-slider__controls {
+  display: flex;
+  align-items: center;
+}
+
+.promo-slider__prev,
+.promo-slider__next {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  @include wide-tablet {
+    width: 35px;
+    height: 35px;
+  }
+
+  & svg {
+    top: 50%;
+    width: 20px;
+    height: 15px;
+
+    @include wide-tablet {
+      width: 30px;
+      height: 20px;
+    }
+
+    & path {
+      fill: $black;
+    }
+  }
+
+  &:hover {
+    & svg path {
+      fill: $primary;
+    }
+  }
+
+  &.disabled,
+  &.disabled:hover {
+    cursor: auto;
+
+    & svg path {
+      fill: #e2e2e2;
+    }
+  }
+}
+
+.promo-slider__prev {
+  margin-right: 20px;
+
+  & svg {
+    position: absolute;
+    left: 0;
+    transform: translate(0, -50%) rotate(90deg);
+  }
+}
+
+.promo-slider__next {
+
+  & svg {
+    position: absolute;
+    right: 0;
+    transform: translate(0, -50%) rotate(-90deg);
+  }
+}
