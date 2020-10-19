@@ -32,20 +32,20 @@
 /**
  * @section Base Styles
  */
-/* line 42, src/sass/components/_base.scss */
+/* line 38, src/sass/components/_base.scss */
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%;
 }
 
-/* line 47, src/sass/components/_base.scss */
+/* line 43, src/sass/components/_base.scss */
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
 
-/* line 51, src/sass/components/_base.scss */
+/* line 47, src/sass/components/_base.scss */
 body {
   min-width: 320px;
   height: 100%;
@@ -54,13 +54,13 @@ body {
   background-color: #ffffff;
 }
 
-/* line 59, src/sass/components/_base.scss */
+/* line 55, src/sass/components/_base.scss */
 img {
   width: 100%;
   height: auto;
 }
 
-/* line 65, src/sass/components/_base.scss */
+/* line 61, src/sass/components/_base.scss */
 .container {
   width: 100%;
   padding-right: 15px;
@@ -70,34 +70,34 @@ img {
 }
 
 @media (min-width: 576px) {
-  /* line 65, src/sass/components/_base.scss */
+  /* line 61, src/sass/components/_base.scss */
   .container {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 65, src/sass/components/_base.scss */
+  /* line 61, src/sass/components/_base.scss */
   .container {
     max-width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 65, src/sass/components/_base.scss */
+  /* line 61, src/sass/components/_base.scss */
   .container {
     max-width: 970px;
   }
 }
 
 @media (min-width: 1280px) {
-  /* line 65, src/sass/components/_base.scss */
+  /* line 61, src/sass/components/_base.scss */
   .container {
     max-width: 1250px;
   }
 }
 
-/* line 89, src/sass/components/_base.scss */
+/* line 85, src/sass/components/_base.scss */
 .section-title {
   font-size: 16px;
   line-height: 30px;
@@ -105,14 +105,14 @@ img {
 }
 
 @media (min-width: 992px) {
-  /* line 89, src/sass/components/_base.scss */
+  /* line 85, src/sass/components/_base.scss */
   .section-title {
     font-size: 18px;
   }
 }
 
 @media (min-width: 1280px) {
-  /* line 89, src/sass/components/_base.scss */
+  /* line 85, src/sass/components/_base.scss */
   .section-title {
     font-size: 22px;
   }
