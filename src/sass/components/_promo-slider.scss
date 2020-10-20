@@ -76,3 +76,13 @@
     transform: translate(0, -50%) rotate(-90deg);
   }
 }
+
+// TODO: DEV PREVIEW STYLES! delete before deploy
+.fake-slider div:nth-child(3),
+.fake-slider div:nth-child(4) {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}

@@ -6,6 +6,7 @@ $primary: #c50e50;
 $primaryEffect: #b30b48;
 $lightGray: #e2e2e2;
 $black: #000000;
+$gray: #484848;
 $wideMobile: 576px;
 $tablet: 768px;
 $wideTablet: 992px;
@@ -37,7 +38,6 @@ $desktop: 1280px;
 
 html {
 	box-sizing: border-box;
-	height: 100%;
 }
 
 *, *::before, *::after {
@@ -46,7 +46,6 @@ html {
 
 body {
 	min-width: 320px;
-	height: 100%;
 	margin: 0;
 	font-family: "Montserrat", sans-serif;
 	background-color: $white;
@@ -82,10 +81,32 @@ img {
 	}
 }
 
+.page__main-banner {
+	width: calc(100% + 30px);
+	height: 100vh;
+	transform: translate(-15px, 0);
+
+	@include wide-mobile {
+		width: 100vw;
+		transform: translate(calc((510px - 100vw) / 2), 0);
+	}
+
+	@include tablet {
+		transform: translate(calc((720px - 100vw) / 2), 0);
+	}
+
+	@include wide-tablet {
+		width: 100%;
+		margin-top: 20px;
+		transform: none;
+	}
+}
+
 .section-title {
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: 600;
+	color: $gray;
 
 	@include wide-tablet {
 		font-size: 18px;

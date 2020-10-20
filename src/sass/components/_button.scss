@@ -49,4 +49,16 @@
       color: $white;
     }
   }
+
+  &--gray {
+    color: $gray;
+    border-color: $gray;
+    background-color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: $gray;
+      color: $white;
+    }
+  }
 }
