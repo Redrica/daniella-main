@@ -7,6 +7,8 @@
     <title>Daniella</title>
 </head>
 <body>
+<!--    использовалось для демонстрации, убрать -->
+<!--    удалить стилевой блок _fake.scss и его подключение -->
     <header class="fake-header">
         <picture>
             <source srcset="img/fake/header_max.png" media="(min-width: 1280px)">
@@ -16,8 +18,9 @@
             <img src="img/fake/header_575-.png" alt="">
         </picture>
     </header>
+<!--    -->
 
-    <div class="page container" role="main">
+    <main class="page container" role="main">
         <div class="page__main-banner main-banner" style="background-image: url('img/main_banner.jpg')">
             <div class="main-banner__content main-banner__content--light-theme">
                 <p class="main-banner__title">Осенние мотивы</p>
@@ -38,6 +41,8 @@
             </div>
         </div>
 
+<!--        раздел promo-section может состоять из двух карточек категорий + слайдер, либо только из карточек-->
+<!--        первый в разметке – как шаблон ↓, прокомментирован и т.п.-->
         <section class="promo-section">
             <div class="promo-section__categories">
                 <div class="promo-section__card category-card">
@@ -51,9 +56,15 @@
                     </div>
 
                     <a class="category-card__image-wrapper" href="#">
-                        <img src="img/new.jpg" alt="">
+                        <picture>
+                            <source srcset="img/new.jpg" media="(min-width: 1280px)">
+                            <source srcset="img/new.jpg" media="(min-width: 992px)">
+                            <source srcset="img/new.jpg" media="(min-width: 768px)">
+                            <img src="img/new.jpg" alt="">
+                        </picture>
                     </a>
                 </div>
+
                 <div class="promo-section__card category-card">
                     <div class="category-card__header">
                         <a class="category-card__header-title section-title" href="#">
@@ -65,7 +76,12 @@
                     </div>
 
                     <a class="category-card__image-wrapper">
-                        <img src="img/top.jpg" alt="">
+                        <picture>
+                            <source srcset="img/top.jpg" media="(min-width: 1280px)">
+                            <source srcset="img/top.jpg" media="(min-width: 992px)">
+                            <source srcset="img/top.jpg" media="(min-width: 768px)">
+                            <img src="img/top.jpg" alt="">
+                        </picture>
                     </a>
                 </div>
             </div>
@@ -90,8 +106,13 @@
                         </button>
                     </div>
                 </div>
+
+<!--                класс fake-slider использовался для демонстрации, убрать -->
+<!--                контейнер для подключаемого слайдера-->
                 <div class="fake-slider">
+<!--                    слайд слайдера -->
                     <div class="">
+<!--                        picture убрать, это будет карточка товара-->
                         <picture>
                             <source srcset="img/fake/f-slide-1_max.png" media="(min-width: 1280px)">
                             <source srcset="img/fake/f-slide-1_1279-.png" media="(min-width: 768px)">
@@ -245,7 +266,10 @@
                     </a>
                 </div>
             </div>
+        </section>
+    </main>
 
+<!--            использовалось для демонстрации, убрать -->
     <footer class="fake-footer">
         <picture>
             <source srcset="img/fake/footer_max.png" media="(min-width: 1280px)">
@@ -255,6 +279,7 @@
             <img src="img/fake/footer_575-.png">
         </picture>
     </footer>
+<!--            -->
 
 </body>
 </html>

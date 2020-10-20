@@ -1,3 +1,5 @@
+// TODO: DEV PREVIEW STYLES! delete before deploy
+
 .fake-header,
 .fake-footer {
 
@@ -16,4 +18,13 @@
 .fake-slider {
   display: flex;
   justify-content: space-between;
+}
+
+.fake-slider div:nth-child(3),
+.fake-slider div:nth-child(4) {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
 }
