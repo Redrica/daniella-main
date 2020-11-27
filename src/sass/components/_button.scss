@@ -61,4 +61,19 @@
       color: $white;
     }
   }
+
+    &--small {
+        padding: 12px;
+        font-size: 12px;
+        line-height: 16px;
+
+        @include wide-mobile {
+            line-height: 16px;
+            padding: 10px 16px;
+        }
+
+        @include tablet {
+            font-size: 14px;
+        }
+    }
 }

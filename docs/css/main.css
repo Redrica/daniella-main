@@ -1,34 +1,4 @@
 /*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
-/* line 4, src/sass/components/_fake.scss */
-.fake-header picture,
-.fake-footer picture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
-}
-
-/* line 10, src/sass/components/_fake.scss */
-.fake-header img,
-.fake-footer img {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: auto;
-}
-
-/* line 16, src/sass/components/_fake.scss */
-.fake-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 /**
  * @section Base Styles
  */
@@ -872,6 +842,69 @@ blockquote {
           transform-origin: right top;
 }
 
+/* line 1, src/sass/components/_category-block.scss */
+.category-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* line 8, src/sass/components/_category-block.scss */
+.category-block__link {
+  position: relative;
+  width: calc(100% / 2 - 2px);
+}
+
+@media (min-width: 768px) {
+  /* line 8, src/sass/components/_category-block.scss */
+  .category-block__link {
+    width: calc(100% / 2 - 3px);
+    margin-bottom: 4px;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* line 8, src/sass/components/_category-block.scss */
+  .category-block__link {
+    width: calc(100% / 2 - 4px);
+    margin-bottom: 6px;
+  }
+}
+
+/* line 23, src/sass/components/_category-block.scss */
+.category-block__button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: 576px) {
+  /* line 23, src/sass/components/_category-block.scss */
+  .category-block__button {
+    bottom: 20px;
+    left: 20px;
+    right: unset;
+  }
+}
+
+/* line 35, src/sass/components/_category-block.scss */
+.category-block__button--centered {
+  top: 50%;
+  left: 50%;
+  right: unset;
+  bottom: unset;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 /* line 1, src/sass/components/_promo-section.scss */
 .promo-section {
   padding: 20px 0 5px;
@@ -1034,20 +1067,6 @@ blockquote {
           transform: translate(0, -50%) rotate(-90deg);
 }
 
-/* line 81, src/sass/components/_promo-slider.scss */
-.fake-slider div:nth-child(3),
-.fake-slider div:nth-child(4) {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  /* line 81, src/sass/components/_promo-slider.scss */
-  .fake-slider div:nth-child(3),
-  .fake-slider div:nth-child(4) {
-    display: block;
-  }
-}
-
 /* line 1, src/sass/components/_button.scss */
 .button {
   display: block;
@@ -1122,4 +1141,70 @@ blockquote {
 .button--gray:hover, .button--gray:focus {
   background-color: #484848;
   color: #ffffff;
+}
+
+/* line 65, src/sass/components/_button.scss */
+.button--small {
+  padding: 12px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media (min-width: 576px) {
+  /* line 65, src/sass/components/_button.scss */
+  .button--small {
+    line-height: 16px;
+    padding: 10px 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 65, src/sass/components/_button.scss */
+  .button--small {
+    font-size: 14px;
+  }
+}
+
+/* line 6, src/sass/components/_fake.scss */
+.fake-header picture,
+.fake-footer picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+/* line 12, src/sass/components/_fake.scss */
+.fake-header img,
+.fake-footer img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: auto;
+}
+
+/* line 18, src/sass/components/_fake.scss */
+.fake-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 23, src/sass/components/_fake.scss */
+.fake-slider div:nth-child(3),
+.fake-slider div:nth-child(4) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* line 23, src/sass/components/_fake.scss */
+  .fake-slider div:nth-child(3),
+  .fake-slider div:nth-child(4) {
+    display: block;
+  }
 }
