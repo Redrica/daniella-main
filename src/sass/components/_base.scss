@@ -7,10 +7,17 @@ $primaryEffect: #b30b48;
 $lightGray: #e2e2e2;
 $black: #000000;
 $gray: #484848;
+$mobile: 375px;
 $wideMobile: 576px;
 $tablet: 768px;
 $wideTablet: 992px;
 $desktop: 1280px;
+
+@mixin mobile {
+    @media (min-width: #{$mobile}) {
+        @content;
+    }
+}
 
 @mixin wide-mobile {
 	@media (min-width: #{$wideMobile}) {

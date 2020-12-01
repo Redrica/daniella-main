@@ -63,13 +63,16 @@
   }
 
     &--small {
-        padding: 12px;
+        padding: 6px;
         font-size: 12px;
         line-height: 16px;
 
+        @include mobile {
+            padding: 10px 16px;
+        }
+
         @include wide-mobile {
             line-height: 16px;
-            padding: 10px 16px;
         }
 
         @include tablet {

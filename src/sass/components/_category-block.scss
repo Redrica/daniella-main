@@ -8,6 +8,7 @@
 .category-block__link {
     position: relative;
     width: calc(100% / 2 - 2px);
+    margin-bottom: 3px;
     font-size: 0;
     border: 1px solid $gray;
 
@@ -26,9 +27,10 @@
 
 .category-block__button {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: unset;
+    bottom: 5px;
+    left: unset;
+    right: 5px;
 
     @include wide-mobile {
         top: unset;
