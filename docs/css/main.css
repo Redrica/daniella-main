@@ -861,19 +861,19 @@ blockquote {
   position: relative;
   width: calc(100% / 2 - 2px);
   font-size: 0;
+  border: 1px solid #484848;
 }
 
 @media (min-width: 768px) {
   /* line 8, src/sass/components/_category-block.scss */
   .category-block__link {
-    margin-bottom: 2px;
+    margin-bottom: 3px;
   }
 }
 
 @media (min-width: 1280px) {
   /* line 8, src/sass/components/_category-block.scss */
   .category-block__link {
-    width: calc(100% / 2 - 3px);
     margin-bottom: 4px;
   }
 }
@@ -890,13 +890,22 @@ blockquote {
   /* line 23, src/sass/components/_category-block.scss */
   .category-block__button {
     top: unset;
+    bottom: 15px;
+    left: unset;
+    right: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 23, src/sass/components/_category-block.scss */
+  .category-block__button {
     bottom: 20px;
     left: unset;
     right: 20px;
   }
 }
 
-/* line 36, src/sass/components/_category-block.scss */
+/* line 42, src/sass/components/_category-block.scss */
 .category-block__button--centered {
   top: 50%;
   left: 50%;

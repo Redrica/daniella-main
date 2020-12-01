@@ -9,13 +9,13 @@
     position: relative;
     width: calc(100% / 2 - 2px);
     font-size: 0;
+    border: 1px solid $gray;
 
     @include tablet {
-        margin-bottom: 2px;
+        margin-bottom: 3px;
     }
 
     @include desktop {
-        width: calc(100% / 2 - 3px);
         margin-bottom: 4px;
     }
 }
@@ -28,6 +28,12 @@
 
     @include wide-mobile {
         top: unset;
+        bottom: 15px;
+        left: unset;
+        right: 15px;
+    }
+
+    @include wide-tablet {
         bottom: 20px;
         left: unset;
         right: 20px;
