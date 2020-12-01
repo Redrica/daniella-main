@@ -860,9 +860,17 @@ blockquote {
 .category-block__link {
   position: relative;
   width: calc(100% / 2 - 2px);
+  font-size: 0;
 }
 
 @media (min-width: 768px) {
+  /* line 8, src/sass/components/_category-block.scss */
+  .category-block__link {
+    margin-bottom: 2px;
+  }
+}
+
+@media (min-width: 1280px) {
   /* line 8, src/sass/components/_category-block.scss */
   .category-block__link {
     width: calc(100% / 2 - 3px);
@@ -870,18 +878,10 @@ blockquote {
   }
 }
 
-@media (min-width: 1280px) {
-  /* line 8, src/sass/components/_category-block.scss */
-  .category-block__link {
-    width: calc(100% / 2 - 4px);
-    margin-bottom: 6px;
-  }
-}
-
 /* line 23, src/sass/components/_category-block.scss */
 .category-block__button {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -889,13 +889,14 @@ blockquote {
 @media (min-width: 576px) {
   /* line 23, src/sass/components/_category-block.scss */
   .category-block__button {
+    top: unset;
     bottom: 20px;
-    left: 20px;
-    right: unset;
+    left: unset;
+    right: 20px;
   }
 }
 
-/* line 35, src/sass/components/_category-block.scss */
+/* line 36, src/sass/components/_category-block.scss */
 .category-block__button--centered {
   top: 50%;
   left: 50%;
