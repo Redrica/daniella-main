@@ -18,6 +18,10 @@
     @include desktop {
         margin-bottom: 4px;
     }
+
+    &--no-border {
+        border: none;
+    }
 }
 
 .category-block__button {

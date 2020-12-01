@@ -878,7 +878,12 @@ blockquote {
   }
 }
 
-/* line 23, src/sass/components/_category-block.scss */
+/* line 22, src/sass/components/_category-block.scss */
+.category-block__link--no-border {
+  border: none;
+}
+
+/* line 27, src/sass/components/_category-block.scss */
 .category-block__button {
   position: absolute;
   top: 0;
@@ -887,7 +892,7 @@ blockquote {
 }
 
 @media (min-width: 576px) {
-  /* line 23, src/sass/components/_category-block.scss */
+  /* line 27, src/sass/components/_category-block.scss */
   .category-block__button {
     top: unset;
     bottom: 15px;
@@ -897,7 +902,7 @@ blockquote {
 }
 
 @media (min-width: 992px) {
-  /* line 23, src/sass/components/_category-block.scss */
+  /* line 27, src/sass/components/_category-block.scss */
   .category-block__button {
     bottom: 20px;
     left: unset;
@@ -905,7 +910,7 @@ blockquote {
   }
 }
 
-/* line 42, src/sass/components/_category-block.scss */
+/* line 46, src/sass/components/_category-block.scss */
 .category-block__button--centered {
   top: 50%;
   left: 50%;
